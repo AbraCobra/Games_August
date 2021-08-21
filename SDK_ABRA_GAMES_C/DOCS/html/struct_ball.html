@@ -1,0 +1,391 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROGRAMMING SIMPLE GAMES ON C/C++: Структура Ball</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Lego.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROGRAMMING SIMPLE GAMES ON C/C++
+   &#160;<span id="projectnumber">Arcade game &quot;Break out&quot;  with TXLib</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('struct_ball.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pub-attribs">Открытые атрибуты</a> &#124;
+<a href="struct_ball-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Структура Ball</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a66616c41cb409ec73a52070bd2761e49"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html#a66616c41cb409ec73a52070bd2761e49">Draw_Ball</a> ()</td></tr>
+<tr class="separator:a66616c41cb409ec73a52070bd2761e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa46bfb370c8a0524109bfdfc6b277306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html#aa46bfb370c8a0524109bfdfc6b277306">Physics_Ball</a> (double <a class="el" href="_break__out___lib_8h.html#a03e28be41881b703c836edbfe9b51b17">dt</a>, <a class="el" href="struct_level.html">Level</a> *<a class="el" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>)</td></tr>
+<tr class="separator:aa46bfb370c8a0524109bfdfc6b277306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Открытые атрибуты</h2></td></tr>
+<tr class="memitem:a60894aab5e27e93bacf2393b9110a049"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a></td></tr>
+<tr class="separator:a60894aab5e27e93bacf2393b9110a049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d73231eab81d0e74cf28d0068fe5cb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a></td></tr>
+<tr class="separator:a17d73231eab81d0e74cf28d0068fe5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cc3e6d17874d6a99d72657af3bd3a33"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">vx</a></td></tr>
+<tr class="separator:a4cc3e6d17874d6a99d72657af3bd3a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa58f7f56586df265f2fd1d56ce1f0504"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html#aa58f7f56586df265f2fd1d56ce1f0504">vy</a></td></tr>
+<tr class="separator:aa58f7f56586df265f2fd1d56ce1f0504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5b6ed9fe327aace1b4e4a6473838bc6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a></td></tr>
+<tr class="separator:ab5b6ed9fe327aace1b4e4a6473838bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48284591db8bb50a9556d5df700b1680"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html#a48284591db8bb50a9556d5df700b1680">missed_balls</a></td></tr>
+<tr class="separator:a48284591db8bb50a9556d5df700b1680"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00072">72</a></p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a66616c41cb409ec73a52070bd2761e49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66616c41cb409ec73a52070bd2761e49">&#9670;&nbsp;</a></span>Draw_Ball()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ball::Draw_Ball </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция метод класса <a class="el" href="struct_ball.html">Ball</a>, рисует мяч.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>x - координата центра мяча </td></tr>
+    <tr><td class="paramname">y</td><td>y - координата центра мяча </td></tr>
+    <tr><td class="paramname">radius</td><td>Радиус мяча</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Пример использования:</dt><dd></dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>.<a class="code" href="struct_ball.html#a66616c41cb409ec73a52070bd2761e49">Draw_Ball</a>();</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a15de41d45a60a7649d561f53ca88352c"><div class="ttname"><a href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a></div><div class="ttdeci">Ball ball</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00104">Break_out_Lib.h:104</a></div></div>
+<div class="ttc" id="astruct_ball_html_a66616c41cb409ec73a52070bd2761e49"><div class="ttname"><a href="struct_ball.html#a66616c41cb409ec73a52070bd2761e49">Ball::Draw_Ball</a></div><div class="ttdeci">void Draw_Ball()</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00231">Break_out_Lib.h:231</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00231">231</a></p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    {</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    txSetColor     (RGB ( 204, 102, 50), 2);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    txSetFillColor (RGB ( 204, 102, 50));</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    txCircle (<a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a>, <a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a>, <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    }</div>
+<div class="ttc" id="astruct_ball_html_a17d73231eab81d0e74cf28d0068fe5cb"><div class="ttname"><a href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">Ball::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00074">Break_out_Lib.h:74</a></div></div>
+<div class="ttc" id="astruct_ball_html_a60894aab5e27e93bacf2393b9110a049"><div class="ttname"><a href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">Ball::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00074">Break_out_Lib.h:74</a></div></div>
+<div class="ttc" id="astruct_ball_html_ab5b6ed9fe327aace1b4e4a6473838bc6"><div class="ttname"><a href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">Ball::radius</a></div><div class="ttdeci">int radius</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00076">Break_out_Lib.h:76</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_break__out___lib_8h_source.html#l00076">radius</a>, <a class="el" href="_break__out___lib_8h_source.html#l00074">x</a> и <a class="el" href="_break__out___lib_8h_source.html#l00074">y</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<a id="aa46bfb370c8a0524109bfdfc6b277306"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa46bfb370c8a0524109bfdfc6b277306">&#9670;&nbsp;</a></span>Physics_Ball()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Ball::Physics_Ball </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_level.html">Level</a> *&#160;</td>
+          <td class="paramname"><em>level</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция также метод класса <a class="el" href="struct_ball.html">Ball</a>, реализует движение мяча.</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">double</td><td>dt промежуток времени (dt = 1.0) </td></tr>
+    <tr><td class="paramname">x</td><td>x - координата центра мяча </td></tr>
+    <tr><td class="paramname">y</td><td>y - координата центра мяча </td></tr>
+    <tr><td class="paramname">vx</td><td>скорость мяча по x </td></tr>
+    <tr><td class="paramname">vy</td><td>скорость мяча по y </td></tr>
+    <tr><td class="paramname">radius</td><td>радиус мяча </td></tr>
+    <tr><td class="paramname">missed_balls</td><td>пропущенные мячи</td></tr>
+    <tr><td class="paramname">(*level).score</td><td>текущий счет игры </td></tr>
+    <tr><td class="paramname">(*level).game_state</td><td>состояние игры</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Пример использования:</dt><dd></dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>.<a class="code" href="struct_ball.html#aa46bfb370c8a0524109bfdfc6b277306">Physics_Ball</a> (<a class="code" href="_break__out___lib_8h.html#a03e28be41881b703c836edbfe9b51b17">dt</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>);</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a03e28be41881b703c836edbfe9b51b17"><div class="ttname"><a href="_break__out___lib_8h.html#a03e28be41881b703c836edbfe9b51b17">dt</a></div><div class="ttdeci">double dt</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00116">Break_out_Lib.h:116</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a083b6d36ebd55b2e07bedb04440cb325"><div class="ttname"><a href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a></div><div class="ttdeci">Level level</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00106">Break_out_Lib.h:106</a></div></div>
+<div class="ttc" id="astruct_ball_html_aa46bfb370c8a0524109bfdfc6b277306"><div class="ttname"><a href="struct_ball.html#aa46bfb370c8a0524109bfdfc6b277306">Ball::Physics_Ball</a></div><div class="ttdeci">void Physics_Ball(double dt, Level *level)</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00259">Break_out_Lib.h:259</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00259">259</a></p>
+<div class="fragment"><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a> = <a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a> + <a class="code" href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">vx</a> * <a class="code" href="_break__out___lib_8h.html#a03e28be41881b703c836edbfe9b51b17">dt</a>;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a> = <a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a> + <a class="code" href="struct_ball.html#aa58f7f56586df265f2fd1d56ce1f0504">vy</a> * <a class="code" href="_break__out___lib_8h.html#a03e28be41881b703c836edbfe9b51b17">dt</a>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a> &gt;= <a class="code" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a> - <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        txPlaySound (<span class="stringliteral">&quot;Resourses\\hit.wav&quot;</span>, SND_ASYNC);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <a class="code" href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">vx</a> = - <a class="code" href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">vx</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a>  = <a class="code" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a> - <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        }</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a> &gt;= <a class="code" href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a> - <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>)</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        txPlaySound (<span class="stringliteral">&quot;Resourses\\poolpot.wav&quot;</span>, SND_ASYNC);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <a class="code" href="struct_ball.html#a48284591db8bb50a9556d5df700b1680">missed_balls</a> += 1;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        (*level).score -= 50;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        <a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a>  = <a class="code" href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a>/2 - <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        }</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a> &lt;= <a class="code" href="_break__out___lib_8h.html#a228727b40a2b7f6d9cac4bd2c3162753">LEFT_EDGE_WINDOW</a> + <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>)</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        txPlaySound (<span class="stringliteral">&quot;Resourses\\hit.wav&quot;</span>, SND_ASYNC);</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <a class="code" href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">vx</a> = - <a class="code" href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">vx</a>;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a>  = <a class="code" href="_break__out___lib_8h.html#a228727b40a2b7f6d9cac4bd2c3162753">LEFT_EDGE_WINDOW</a> + <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        }</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a> &lt;= <a class="code" href="_break__out___lib_8h.html#ad0dcc06358eae565ed5efa0ca65eab3f">TOP_WINDOW</a> + <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        txPlaySound (<span class="stringliteral">&quot;Resourses\\hit.wav&quot;</span>, SND_ASYNC);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <a class="code" href="struct_ball.html#aa58f7f56586df265f2fd1d56ce1f0504">vy</a> = - <a class="code" href="struct_ball.html#aa58f7f56586df265f2fd1d56ce1f0504">vy</a>;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;        <a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a>  = <a class="code" href="_break__out___lib_8h.html#ad0dcc06358eae565ed5efa0ca65eab3f">TOP_WINDOW</a> + <a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="struct_ball.html#a48284591db8bb50a9556d5df700b1680">missed_balls</a> == 10)</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        {</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        txPlaySound (<span class="stringliteral">&quot;Resourses\\ICE.wav&quot;</span>, SND_ASYNC);</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        ((*level).game_state) = <a class="code" href="_break__out___lib_8h.html#acc8371038d74e92c1a07f0fb4d3336e5">GAME_STATE_EXIT</a>;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">vx</a> &gt;= 25) <a class="code" href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">vx</a> -= 5;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    }</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a228727b40a2b7f6d9cac4bd2c3162753"><div class="ttname"><a href="_break__out___lib_8h.html#a228727b40a2b7f6d9cac4bd2c3162753">LEFT_EDGE_WINDOW</a></div><div class="ttdeci">#define LEFT_EDGE_WINDOW</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00037">Break_out_Lib.h:37</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a5256a79b292c1ee1cad686afa167b9da"><div class="ttname"><a href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a></div><div class="ttdeci">#define RIGHT_EDGE_WINDOW</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00038">Break_out_Lib.h:38</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_aa4ba12946eca9feab537e58f1e8455dd"><div class="ttname"><a href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a></div><div class="ttdeci">#define BOTTON_WINDOW</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00040">Break_out_Lib.h:40</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_acc8371038d74e92c1a07f0fb4d3336e5"><div class="ttname"><a href="_break__out___lib_8h.html#acc8371038d74e92c1a07f0fb4d3336e5">GAME_STATE_EXIT</a></div><div class="ttdeci">#define GAME_STATE_EXIT</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00045">Break_out_Lib.h:45</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_ad0dcc06358eae565ed5efa0ca65eab3f"><div class="ttname"><a href="_break__out___lib_8h.html#ad0dcc06358eae565ed5efa0ca65eab3f">TOP_WINDOW</a></div><div class="ttdeci">#define TOP_WINDOW</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00039">Break_out_Lib.h:39</a></div></div>
+<div class="ttc" id="astruct_ball_html_a48284591db8bb50a9556d5df700b1680"><div class="ttname"><a href="struct_ball.html#a48284591db8bb50a9556d5df700b1680">Ball::missed_balls</a></div><div class="ttdeci">int missed_balls</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00077">Break_out_Lib.h:77</a></div></div>
+<div class="ttc" id="astruct_ball_html_a4cc3e6d17874d6a99d72657af3bd3a33"><div class="ttname"><a href="struct_ball.html#a4cc3e6d17874d6a99d72657af3bd3a33">Ball::vx</a></div><div class="ttdeci">double vx</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00075">Break_out_Lib.h:75</a></div></div>
+<div class="ttc" id="astruct_ball_html_aa58f7f56586df265f2fd1d56ce1f0504"><div class="ttname"><a href="struct_ball.html#aa58f7f56586df265f2fd1d56ce1f0504">Ball::vy</a></div><div class="ttdeci">double vy</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00075">Break_out_Lib.h:75</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_break__out___lib_8h_source.html#l00040">BOTTON_WINDOW</a>, <a class="el" href="_break__out___lib_8h_source.html#l00116">dt</a>, <a class="el" href="_break__out___lib_8h_source.html#l00045">GAME_STATE_EXIT</a>, <a class="el" href="_break__out___lib_8h_source.html#l00037">LEFT_EDGE_WINDOW</a>, <a class="el" href="_break__out___lib_8h_source.html#l00077">missed_balls</a>, <a class="el" href="_break__out___lib_8h_source.html#l00076">radius</a>, <a class="el" href="_break__out___lib_8h_source.html#l00038">RIGHT_EDGE_WINDOW</a>, <a class="el" href="_break__out___lib_8h_source.html#l00039">TOP_WINDOW</a>, <a class="el" href="_break__out___lib_8h_source.html#l00075">vx</a>, <a class="el" href="_break__out___lib_8h_source.html#l00075">vy</a>, <a class="el" href="_break__out___lib_8h_source.html#l00074">x</a> и <a class="el" href="_break__out___lib_8h_source.html#l00074">y</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a60894aab5e27e93bacf2393b9110a049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60894aab5e27e93bacf2393b9110a049">&#9670;&nbsp;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Ball::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00074">74</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out___lib_8h_source.html#l00343">Check_distanse()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00231">Draw_Ball()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00259">Physics_Ball()</a>.</p>
+
+</div>
+</div>
+<a id="a17d73231eab81d0e74cf28d0068fe5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d73231eab81d0e74cf28d0068fe5cb">&#9670;&nbsp;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Ball::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00074">74</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out___lib_8h_source.html#l00343">Check_distanse()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00231">Draw_Ball()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00259">Physics_Ball()</a>.</p>
+
+</div>
+</div>
+<a id="a4cc3e6d17874d6a99d72657af3bd3a33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cc3e6d17874d6a99d72657af3bd3a33">&#9670;&nbsp;</a></span>vx</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Ball::vx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00075">75</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out___lib_8h_source.html#l00259">Physics_Ball()</a>.</p>
+
+</div>
+</div>
+<a id="aa58f7f56586df265f2fd1d56ce1f0504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa58f7f56586df265f2fd1d56ce1f0504">&#9670;&nbsp;</a></span>vy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Ball::vy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00075">75</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out___lib_8h_source.html#l00259">Physics_Ball()</a>.</p>
+
+</div>
+</div>
+<a id="ab5b6ed9fe327aace1b4e4a6473838bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5b6ed9fe327aace1b4e4a6473838bc6">&#9670;&nbsp;</a></span>radius</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ball::radius</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00076">76</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out___lib_8h_source.html#l00343">Check_distanse()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00231">Draw_Ball()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00259">Physics_Ball()</a>.</p>
+
+</div>
+</div>
+<a id="a48284591db8bb50a9556d5df700b1680"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48284591db8bb50a9556d5df700b1680">&#9670;&nbsp;</a></span>missed_balls</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Ball::missed_balls</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00077">77</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out___lib_8h_source.html#l00259">Physics_Ball()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li><a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct_ball.html">Ball</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

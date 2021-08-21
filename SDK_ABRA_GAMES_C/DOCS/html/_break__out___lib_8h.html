@@ -1,0 +1,1155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PROGRAMMING SIMPLE GAMES ON C/C++: Файл Break_out_Lib.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="Lego.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">PROGRAMMING SIMPLE GAMES ON C/C++
+   &#160;<span id="projectnumber">Arcade game &quot;Break out&quot;  with TXLib</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_break__out___lib_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл Break_out_Lib.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a href="_break__out___lib_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_blocks.html">Blocks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_level.html">Level</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ball.html">Ball</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_paddle.html">Paddle</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_button_type.html">ButtonType</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:acdc1305b1b5ecac1b5bd1a6ee130f95e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:acdc1305b1b5ecac1b5bd1a6ee130f95e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d7217f7b4b405cf816601245e2bec3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>&#160;&#160;&#160;9</td></tr>
+<tr class="separator:a87d7217f7b4b405cf816601245e2bec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801b4a8dae587b94276d327d6462baf4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a801b4a8dae587b94276d327d6462baf4">ORIGIN_X</a>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a801b4a8dae587b94276d327d6462baf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b847faaa49e47547adafd822c75eea7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a8b847faaa49e47547adafd822c75eea7">ORIGIN_Y</a>&#160;&#160;&#160;70</td></tr>
+<tr class="separator:a8b847faaa49e47547adafd822c75eea7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228727b40a2b7f6d9cac4bd2c3162753"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a228727b40a2b7f6d9cac4bd2c3162753">LEFT_EDGE_WINDOW</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a228727b40a2b7f6d9cac4bd2c3162753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5256a79b292c1ee1cad686afa167b9da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a>&#160;&#160;&#160;780</td></tr>
+<tr class="separator:a5256a79b292c1ee1cad686afa167b9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0dcc06358eae565ed5efa0ca65eab3f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#ad0dcc06358eae565ed5efa0ca65eab3f">TOP_WINDOW</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad0dcc06358eae565ed5efa0ca65eab3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ba12946eca9feab537e58f1e8455dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a>&#160;&#160;&#160;700</td></tr>
+<tr class="separator:aa4ba12946eca9feab537e58f1e8455dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34e41c7acab285c5f2fbc4c69fab97f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#aa34e41c7acab285c5f2fbc4c69fab97f">GAME_STATE_INIT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:aa34e41c7acab285c5f2fbc4c69fab97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02fc75454574e56daa0c2a26f37c1b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#ac02fc75454574e56daa0c2a26f37c1b2">GAME_START_LEVEL</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:ac02fc75454574e56daa0c2a26f37c1b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae648ec5e53e0f9ae60fe73caef29c9fe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#ae648ec5e53e0f9ae60fe73caef29c9fe">GAME_STATE_RUN</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ae648ec5e53e0f9ae60fe73caef29c9fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad2b8ae855ce7ecb9248cc9b032ebc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a2ad2b8ae855ce7ecb9248cc9b032ebc1">GAME_STATE_SHUTDOWN</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a2ad2b8ae855ce7ecb9248cc9b032ebc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc8371038d74e92c1a07f0fb4d3336e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#acc8371038d74e92c1a07f0fb4d3336e5">GAME_STATE_EXIT</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:acc8371038d74e92c1a07f0fb4d3336e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6494c43872a1d54d6272d0e88c63adc9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a6494c43872a1d54d6272d0e88c63adc9">AMOUNT_OF_LEVELS</a>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a6494c43872a1d54d6272d0e88c63adc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ae22a56c6d4825a6030efb10fa6952a44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#ae22a56c6d4825a6030efb10fa6952a44">Fill_array</a> (int <a class="el" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>[<a class="el" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>][<a class="el" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>])</td></tr>
+<tr class="separator:ae22a56c6d4825a6030efb10fa6952a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d9c5648ce8741fc2f4a4dad07b1ce7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#af9d9c5648ce8741fc2f4a4dad07b1ce7">Print_array</a> (int <a class="el" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>[<a class="el" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>][<a class="el" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>])</td></tr>
+<tr class="separator:af9d9c5648ce8741fc2f4a4dad07b1ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad19d8451d130d30726a521f3e94140e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#aad19d8451d130d30726a521f3e94140e">Control_CollisionsBP</a> (<a class="el" href="struct_ball.html">Ball</a> *<a class="el" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>, <a class="el" href="struct_paddle.html">Paddle</a> *<a class="el" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a>)</td></tr>
+<tr class="separator:aad19d8451d130d30726a521f3e94140e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e71050cfc858e219f7c57d7ca733d4f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a8e71050cfc858e219f7c57d7ca733d4f">Control_CollisionsBB</a> (int <a class="el" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>[<a class="el" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>][<a class="el" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>], <a class="el" href="struct_ball.html">Ball</a> *<a class="el" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>, <a class="el" href="struct_blocks.html">Blocks</a> *<a class="el" href="_break__out___lib_8h.html#a36145728efc8c35b0208f25cfbb5e508">Set</a>, <a class="el" href="struct_level.html">Level</a> *<a class="el" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, <a class="el" href="struct_paddle.html">Paddle</a> *<a class="el" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a>)</td></tr>
+<tr class="separator:a8e71050cfc858e219f7c57d7ca733d4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f2e04ec936db9c11139ec7fcb73d4f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a0f2e04ec936db9c11139ec7fcb73d4f2">Cycling</a> (<a class="el" href="struct_level.html">Level</a> <a class="el" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>)</td></tr>
+<tr class="separator:a0f2e04ec936db9c11139ec7fcb73d4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c36b37cd133d8928e6fb98dc941992a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a3c36b37cd133d8928e6fb98dc941992a">OutputScore</a> (<a class="el" href="struct_level.html">Level</a> *<a class="el" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, int tablo_x, int tablo_y, COLORREF color_score)</td></tr>
+<tr class="separator:a3c36b37cd133d8928e6fb98dc941992a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44bedbaa8f12f037589c121acc2d1cc0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a44bedbaa8f12f037589c121acc2d1cc0">Check_distanse</a> (<a class="el" href="struct_paddle.html">Paddle</a> paddle1, <a class="el" href="struct_ball.html">Ball</a> ball1)</td></tr>
+<tr class="separator:a44bedbaa8f12f037589c121acc2d1cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a36145728efc8c35b0208f25cfbb5e508"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_blocks.html">Blocks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a36145728efc8c35b0208f25cfbb5e508">Set</a> = {10, 50, 80, 20, 85, 25, 0}</td></tr>
+<tr class="separator:a36145728efc8c35b0208f25cfbb5e508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15de41d45a60a7649d561f53ca88352c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_ball.html">Ball</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a> = {400, 400, 15, 15, 10, 0}</td></tr>
+<tr class="separator:a15de41d45a60a7649d561f53ca88352c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93be4e7bf35cde28e9d7995a93009da0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_paddle.html">Paddle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a> = {0, 600, 180, 20}</td></tr>
+<tr class="separator:a93be4e7bf35cde28e9d7995a93009da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083b6d36ebd55b2e07bedb04440cb325"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_level.html">Level</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a> = {0, 0, 1, 0, &quot;SCORE&quot;, &quot;LEVEL&quot;, &quot;BEST RESULT&quot;}</td></tr>
+<tr class="separator:a083b6d36ebd55b2e07bedb04440cb325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8427226d2159ae7f24f4e20b7352c18c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_button_type.html">ButtonType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a8427226d2159ae7f24f4e20b7352c18c">Start</a> = {300, 330, 160, 70}</td></tr>
+<tr class="separator:a8427226d2159ae7f24f4e20b7352c18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a344090c544dac0f9e487f6a4f88eb62a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_button_type.html">ButtonType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a344090c544dac0f9e487f6a4f88eb62a">Play_icon</a> = {590, 25, 30, 20}</td></tr>
+<tr class="separator:a344090c544dac0f9e487f6a4f88eb62a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab194e8518927b1a17926a94e149803a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_button_type.html">ButtonType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#ab194e8518927b1a17926a94e149803a8">Pause_icon</a> = {640, 25, 30, 20}</td></tr>
+<tr class="separator:ab194e8518927b1a17926a94e149803a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4966cb712fb67b7053f05912880a00fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_button_type.html">ButtonType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a4966cb712fb67b7053f05912880a00fe">Exit_icon</a> = {690, 25, 30, 20}</td></tr>
+<tr class="separator:a4966cb712fb67b7053f05912880a00fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3a7c839ffef1524217cbe11eda43c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_button_type.html">ButtonType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#aac3a7c839ffef1524217cbe11eda43c8">Restart</a> = {270, 620, 210, 40}</td></tr>
+<tr class="separator:aac3a7c839ffef1524217cbe11eda43c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0a1b3a70f9ca97855e736eb366f06b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_button_type.html">ButtonType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#ab0a1b3a70f9ca97855e736eb366f06b4">Exit</a> = {305, 455, 155, 65}</td></tr>
+<tr class="separator:ab0a1b3a70f9ca97855e736eb366f06b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03e28be41881b703c836edbfe9b51b17"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a03e28be41881b703c836edbfe9b51b17">dt</a> = 1.0</td></tr>
+<tr class="separator:a03e28be41881b703c836edbfe9b51b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671c2eae79302ad09bdd42991ad94d6f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a> [<a class="el" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>][<a class="el" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>] {}</td></tr>
+<tr class="separator:a671c2eae79302ad09bdd42991ad94d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="acdc1305b1b5ecac1b5bd1a6ee130f95e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc1305b1b5ecac1b5bd1a6ee130f95e">&#9670;&nbsp;</a></span>SIZE_ROWS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SIZE_ROWS&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00033">33</a></p>
+
+</div>
+</div>
+<a id="a87d7217f7b4b405cf816601245e2bec3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d7217f7b4b405cf816601245e2bec3">&#9670;&nbsp;</a></span>SIZE_COLS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SIZE_COLS&#160;&#160;&#160;9</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00034">34</a></p>
+
+</div>
+</div>
+<a id="a801b4a8dae587b94276d327d6462baf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801b4a8dae587b94276d327d6462baf4">&#9670;&nbsp;</a></span>ORIGIN_X</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORIGIN_X&#160;&#160;&#160;10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00035">35</a></p>
+
+</div>
+</div>
+<a id="a8b847faaa49e47547adafd822c75eea7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b847faaa49e47547adafd822c75eea7">&#9670;&nbsp;</a></span>ORIGIN_Y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ORIGIN_Y&#160;&#160;&#160;70</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00036">36</a></p>
+
+</div>
+</div>
+<a id="a228727b40a2b7f6d9cac4bd2c3162753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a228727b40a2b7f6d9cac4bd2c3162753">&#9670;&nbsp;</a></span>LEFT_EDGE_WINDOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LEFT_EDGE_WINDOW&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00037">37</a></p>
+
+</div>
+</div>
+<a id="a5256a79b292c1ee1cad686afa167b9da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5256a79b292c1ee1cad686afa167b9da">&#9670;&nbsp;</a></span>RIGHT_EDGE_WINDOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RIGHT_EDGE_WINDOW&#160;&#160;&#160;780</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a id="ad0dcc06358eae565ed5efa0ca65eab3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0dcc06358eae565ed5efa0ca65eab3f">&#9670;&nbsp;</a></span>TOP_WINDOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOP_WINDOW&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00039">39</a></p>
+
+</div>
+</div>
+<a id="aa4ba12946eca9feab537e58f1e8455dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ba12946eca9feab537e58f1e8455dd">&#9670;&nbsp;</a></span>BOTTON_WINDOW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOTTON_WINDOW&#160;&#160;&#160;700</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00040">40</a></p>
+
+</div>
+</div>
+<a id="aa34e41c7acab285c5f2fbc4c69fab97f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa34e41c7acab285c5f2fbc4c69fab97f">&#9670;&nbsp;</a></span>GAME_STATE_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GAME_STATE_INIT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a id="ac02fc75454574e56daa0c2a26f37c1b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac02fc75454574e56daa0c2a26f37c1b2">&#9670;&nbsp;</a></span>GAME_START_LEVEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GAME_START_LEVEL&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00042">42</a></p>
+
+</div>
+</div>
+<a id="ae648ec5e53e0f9ae60fe73caef29c9fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae648ec5e53e0f9ae60fe73caef29c9fe">&#9670;&nbsp;</a></span>GAME_STATE_RUN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GAME_STATE_RUN&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00043">43</a></p>
+
+</div>
+</div>
+<a id="a2ad2b8ae855ce7ecb9248cc9b032ebc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad2b8ae855ce7ecb9248cc9b032ebc1">&#9670;&nbsp;</a></span>GAME_STATE_SHUTDOWN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GAME_STATE_SHUTDOWN&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00044">44</a></p>
+
+</div>
+</div>
+<a id="acc8371038d74e92c1a07f0fb4d3336e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc8371038d74e92c1a07f0fb4d3336e5">&#9670;&nbsp;</a></span>GAME_STATE_EXIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GAME_STATE_EXIT&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00045">45</a></p>
+
+</div>
+</div>
+<a id="a6494c43872a1d54d6272d0e88c63adc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6494c43872a1d54d6272d0e88c63adc9">&#9670;&nbsp;</a></span>AMOUNT_OF_LEVELS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AMOUNT_OF_LEVELS&#160;&#160;&#160;3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00046">46</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="ae22a56c6d4825a6030efb10fa6952a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae22a56c6d4825a6030efb10fa6952a44">&#9670;&nbsp;</a></span>Fill_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Fill_array </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arr</em>[SIZE_ROWS][SIZE_COLS]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция заполняет массив числами</p>
+<p>В качестве параметра в функцию передается двумерный массив arr[][]</p>
+<dl class="section see"><dt>См. также</dt><dd>Blocks::Draw_blocks (int <a class="el" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>[<a class="el" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>][<a class="el" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>])</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Массив использутся для рисования набора блоков, значения элементов определяют цвет блока </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00144">144</a></p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>; i ++)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>; j ++)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>[i][j] = i*16 + j*3 + 16;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a671c2eae79302ad09bdd42991ad94d6f"><div class="ttname"><a href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a></div><div class="ttdeci">int arr[SIZE_ROWS][SIZE_COLS]</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00117">Break_out_Lib.h:117</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a87d7217f7b4b405cf816601245e2bec3"><div class="ttname"><a href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a></div><div class="ttdeci">#define SIZE_COLS</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00034">Break_out_Lib.h:34</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_acdc1305b1b5ecac1b5bd1a6ee130f95e"><div class="ttname"><a href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a></div><div class="ttdeci">#define SIZE_ROWS</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00033">Break_out_Lib.h:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_break__out___lib_8h_source.html#l00117">arr</a>, <a class="el" href="_break__out___lib_8h_source.html#l00034">SIZE_COLS</a> и <a class="el" href="_break__out___lib_8h_source.html#l00033">SIZE_ROWS</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<a id="af9d9c5648ce8741fc2f4a4dad07b1ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d9c5648ce8741fc2f4a4dad07b1ce7">&#9670;&nbsp;</a></span>Print_array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Print_array </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arr</em>[SIZE_ROWS][SIZE_COLS]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция выводит значения элементов двумерного массива.</p>
+<p>В качестве параметра в функцию передается двумерный массив arr[][]</p>
+<dl class="section see"><dt>См. также</dt><dd><a class="el" href="_break__out___lib_8h.html#a8e71050cfc858e219f7c57d7ca733d4f">Control_CollisionsBB()</a>;</dd></dl>
+<dl class="section note"><dt>Заметки</dt><dd>Функция используется как вспомогательная, для контроля работы </dd>
+<dd>
+функции контроля столкновений мяча и блоков: <a class="el" href="_break__out___lib_8h.html#a8e71050cfc858e219f7c57d7ca733d4f">Control_CollisionsBB()</a>; </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00166">166</a></p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>; i ++)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>; j ++)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            printf (<span class="stringliteral">&quot;%5d &quot;</span>, <a class="code" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>[i][j]);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_break__out___lib_8h_source.html#l00117">arr</a>, <a class="el" href="_break__out___lib_8h_source.html#l00034">SIZE_COLS</a> и <a class="el" href="_break__out___lib_8h_source.html#l00033">SIZE_ROWS</a>.</p>
+
+</div>
+</div>
+<a id="aad19d8451d130d30726a521f3e94140e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad19d8451d130d30726a521f3e94140e">&#9670;&nbsp;</a></span>Control_CollisionsBP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Control_CollisionsBP </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_ball.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_paddle.html">Paddle</a> *&#160;</td>
+          <td class="paramname"><em>paddle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция проверяет столкновения между мячом и ракеткой.</p>
+<p>Принимает в качестве параметров структуры <a class="el" href="struct_ball.html">Ball</a> и <a class="el" href="struct_paddle.html">Paddle</a></p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(*ball).x</td><td>x - координата центра мяча </td></tr>
+    <tr><td class="paramname">(*ball).y</td><td>y - координата центра мяча </td></tr>
+    <tr><td class="paramname">(*ball).radius</td><td>радиус мяча </td></tr>
+    <tr><td class="paramname">(*ball).vx</td><td>скорость мяча по x </td></tr>
+    <tr><td class="paramname">(*ball).vy</td><td>скорость мяча по y</td></tr>
+    <tr><td class="paramname">(*paddle).x</td><td>x - координата левого верхнего угла ракетки </td></tr>
+    <tr><td class="paramname">(*paddle).y</td><td>y - координата левого верхнего угла ракетки </td></tr>
+    <tr><td class="paramname">(*paddle).Paddle_width</td><td>ширина ракетки </td></tr>
+    <tr><td class="paramname">(*paddle).Paddle_height</td><td>высота ракетки</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Пример использования:</dt><dd></dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="_break__out___lib_8h.html#aad19d8451d130d30726a521f3e94140e">Control_CollisionsBP</a> (&amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a>);</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a15de41d45a60a7649d561f53ca88352c"><div class="ttname"><a href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a></div><div class="ttdeci">Ball ball</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00104">Break_out_Lib.h:104</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a93be4e7bf35cde28e9d7995a93009da0"><div class="ttname"><a href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a></div><div class="ttdeci">Paddle paddle</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00105">Break_out_Lib.h:105</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_aad19d8451d130d30726a521f3e94140e"><div class="ttname"><a href="_break__out___lib_8h.html#aad19d8451d130d30726a521f3e94140e">Control_CollisionsBP</a></div><div class="ttdeci">void Control_CollisionsBP(Ball *ball, Paddle *paddle)</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00379">Break_out_Lib.h:379</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00379">379</a></p>
+<div class="fragment"><div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    {</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    <span class="keywordflow">if</span> (((*ball).x + (*ball).radius &gt;= (*paddle).x)</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        &amp;&amp; ((*ball).x + (*ball).radius &lt;= ((*paddle).x + (*paddle).width))</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        &amp;&amp; ((*ball).y + (*ball).radius &gt;= (*paddle).y)</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        &amp;&amp; ((*ball).y + (*ball).radius &lt;= ((*paddle).y + (*paddle).height)))</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        {</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        txPlaySound (<span class="stringliteral">&quot;Resourses\\hit.wav&quot;</span>, SND_ASYNC);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        (*ball).vy =- (*ball).vy;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        (*ball).vy = - 1.0f * abs((*ball).vy);</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        (*ball).y  += (*ball).vy;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <span class="keywordflow">if</span> ((*paddle).x &lt; <a class="code" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a>/2) (*ball).vx -= (rand()%10);</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordflow">if</span> ((*paddle).x &gt; <a class="code" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a>/2) (*ball).vx += (rand()%10);</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;         (*ball).vx += (-1 + rand()%10);</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        }</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    }</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a5256a79b292c1ee1cad686afa167b9da"><div class="ttname"><a href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a></div><div class="ttdeci">#define RIGHT_EDGE_WINDOW</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00038">Break_out_Lib.h:38</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_break__out___lib_8h_source.html#l00038">RIGHT_EDGE_WINDOW</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<a id="a8e71050cfc858e219f7c57d7ca733d4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e71050cfc858e219f7c57d7ca733d4f">&#9670;&nbsp;</a></span>Control_CollisionsBB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Control_CollisionsBB </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>arr</em>[SIZE_ROWS][SIZE_COLS], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_ball.html">Ball</a> *&#160;</td>
+          <td class="paramname"><em>ball</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_blocks.html">Blocks</a> *&#160;</td>
+          <td class="paramname"><em>Set</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_level.html">Level</a> *&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_paddle.html">Paddle</a> *&#160;</td>
+          <td class="paramname"><em>paddle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция проверяет столкновения между мячом и блоками.</p>
+<p>Принимает в качестве параметров массив arr[][], структуры <a class="el" href="struct_ball.html">Ball</a>, <a class="el" href="struct_paddle.html">Paddle</a>, <a class="el" href="struct_level.html">Level</a></p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(*ball).x</td><td>x - координата центра мяча </td></tr>
+    <tr><td class="paramname">(*ball).y</td><td>y - координата центра мяча </td></tr>
+    <tr><td class="paramname">(*ball).radius</td><td>радиус мяча </td></tr>
+    <tr><td class="paramname">(*ball).vx</td><td>скорость мяча по x </td></tr>
+    <tr><td class="paramname">(*ball).vy</td><td>скорость мяча по y</td></tr>
+    <tr><td class="paramname">(*Set).block_hit</td><td>количество выбитых блоков </td></tr>
+    <tr><td class="paramname">(*Set).x</td><td>x - координата верхнего левого угла блока </td></tr>
+    <tr><td class="paramname">(*Set).y</td><td>y - координата верхнего левого угла блока </td></tr>
+    <tr><td class="paramname">(*Set).width</td><td>ширина блока </td></tr>
+    <tr><td class="paramname">(*Set).height</td><td>высота блока </td></tr>
+    <tr><td class="paramname">(*Set).GapX</td><td>расстояние до левого верхнего угла следующего в ряду блока </td></tr>
+    <tr><td class="paramname">(*Set).GapY</td><td>расстояние до левого верхнего угла следующего в столбце блока</td></tr>
+    <tr><td class="paramname">(*paddle).Paddle_width</td><td>ширина ракетки </td></tr>
+    <tr><td class="paramname">(*paddle).Paddle_height</td><td>высота ракетки</td></tr>
+    <tr><td class="paramname">(*level).game_state</td><td>состояние игры </td></tr>
+    <tr><td class="paramname">(*level).max_score</td><td>максимальный счет за игру </td></tr>
+    <tr><td class="paramname">(*level).score</td><td>текущий счет за уровень </td></tr>
+    <tr><td class="paramname">(*level).number_level</td><td>номер уровня</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Пример использования:</dt><dd></dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="_break__out___lib_8h.html#a8e71050cfc858e219f7c57d7ca733d4f">Control_CollisionsBB</a> (<a class="code" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a36145728efc8c35b0208f25cfbb5e508">Set</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a>);</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a083b6d36ebd55b2e07bedb04440cb325"><div class="ttname"><a href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a></div><div class="ttdeci">Level level</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00106">Break_out_Lib.h:106</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a36145728efc8c35b0208f25cfbb5e508"><div class="ttname"><a href="_break__out___lib_8h.html#a36145728efc8c35b0208f25cfbb5e508">Set</a></div><div class="ttdeci">Blocks Set</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00103">Break_out_Lib.h:103</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a8e71050cfc858e219f7c57d7ca733d4f"><div class="ttname"><a href="_break__out___lib_8h.html#a8e71050cfc858e219f7c57d7ca733d4f">Control_CollisionsBB</a></div><div class="ttdeci">void Control_CollisionsBB(int arr[SIZE_ROWS][SIZE_COLS], Ball *ball, Blocks *Set, Level *level, Paddle *paddle)</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00434">Break_out_Lib.h:434</a></div></div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00434">434</a></p>
+<div class="fragment"><div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    {</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <span class="keywordflow">if</span> ((*Set).block_hit == <a class="code" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>*<a class="code" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>)</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        {</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        (*Set).block_hit = 0;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        (*level).game_state = <a class="code" href="_break__out___lib_8h.html#ac02fc75454574e56daa0c2a26f37c1b2">GAME_START_LEVEL</a>;</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">if</span> ((*level).score &gt; (*level).max_score) (*level).max_score = (*level).score;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        (*level).score = 0;</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        (*level).number_level ++;</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        (*ball).x = 400;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        (*ball).y = 400;</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160; </div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        (*paddle).width -= 45;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160; </div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;        <span class="keywordflow">if</span> ((*level).number_level == <a class="code" href="_break__out___lib_8h.html#a6494c43872a1d54d6272d0e88c63adc9">AMOUNT_OF_LEVELS</a> + 1 )</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            {</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;            (*level).number_level = 1;</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;            (*paddle).width = 180;</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;            (*level).game_state = <a class="code" href="_break__out___lib_8h.html#a2ad2b8ae855ce7ecb9248cc9b032ebc1">GAME_STATE_SHUTDOWN</a>;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            }</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        }</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160; </div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;     <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>; i ++)</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        {</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;        (*Set).x = <a class="code" href="_break__out___lib_8h.html#a801b4a8dae587b94276d327d6462baf4">ORIGIN_X</a>;</div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>; j ++)</div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            {</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>[i][j]!=0)</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;                {</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;                <span class="keywordflow">if</span> (((*ball).x + (*ball).radius &gt; (*Set).x)</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;                    &amp;&amp; ((*ball).x + (*ball).radius &lt; ((*Set).x + (*Set).width))</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;                    &amp;&amp; ((*ball).y + (*ball).radius &gt; (*Set).y)</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                    &amp;&amp; ((*ball).y + (*ball).radius &lt; ((*Set).y + (*Set).height)))</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                    {</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                    txPlaySound (<span class="stringliteral">&quot;Resourses\\BIT.wav&quot;</span>, SND_ASYNC);</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                    (*Set).block_hit += 1;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                    (*level).score += 15;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;                    <a class="code" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>[i][j] = 0;</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;                    (*ball).vy = -(*ball).vy;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;                    (*ball).vx += (rand()%3);</div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;                    }</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;                }</div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;            (*Set).x += (*Set).GapX;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            }</div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;        (*Set).y += (*Set).GapY;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        }</div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;    (*Set).y = <a class="code" href="_break__out___lib_8h.html#a8b847faaa49e47547adafd822c75eea7">ORIGIN_Y</a>;</div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;   }</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a2ad2b8ae855ce7ecb9248cc9b032ebc1"><div class="ttname"><a href="_break__out___lib_8h.html#a2ad2b8ae855ce7ecb9248cc9b032ebc1">GAME_STATE_SHUTDOWN</a></div><div class="ttdeci">#define GAME_STATE_SHUTDOWN</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00044">Break_out_Lib.h:44</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a6494c43872a1d54d6272d0e88c63adc9"><div class="ttname"><a href="_break__out___lib_8h.html#a6494c43872a1d54d6272d0e88c63adc9">AMOUNT_OF_LEVELS</a></div><div class="ttdeci">#define AMOUNT_OF_LEVELS</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00046">Break_out_Lib.h:46</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a801b4a8dae587b94276d327d6462baf4"><div class="ttname"><a href="_break__out___lib_8h.html#a801b4a8dae587b94276d327d6462baf4">ORIGIN_X</a></div><div class="ttdeci">#define ORIGIN_X</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00035">Break_out_Lib.h:35</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a8b847faaa49e47547adafd822c75eea7"><div class="ttname"><a href="_break__out___lib_8h.html#a8b847faaa49e47547adafd822c75eea7">ORIGIN_Y</a></div><div class="ttdeci">#define ORIGIN_Y</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00036">Break_out_Lib.h:36</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_ac02fc75454574e56daa0c2a26f37c1b2"><div class="ttname"><a href="_break__out___lib_8h.html#ac02fc75454574e56daa0c2a26f37c1b2">GAME_START_LEVEL</a></div><div class="ttdeci">#define GAME_START_LEVEL</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00042">Break_out_Lib.h:42</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_break__out___lib_8h_source.html#l00046">AMOUNT_OF_LEVELS</a>, <a class="el" href="_break__out___lib_8h_source.html#l00117">arr</a>, <a class="el" href="_break__out___lib_8h_source.html#l00042">GAME_START_LEVEL</a>, <a class="el" href="_break__out___lib_8h_source.html#l00044">GAME_STATE_SHUTDOWN</a>, <a class="el" href="_break__out___lib_8h_source.html#l00035">ORIGIN_X</a>, <a class="el" href="_break__out___lib_8h_source.html#l00036">ORIGIN_Y</a>, <a class="el" href="_break__out___lib_8h_source.html#l00034">SIZE_COLS</a> и <a class="el" href="_break__out___lib_8h_source.html#l00033">SIZE_ROWS</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<a id="a0f2e04ec936db9c11139ec7fcb73d4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f2e04ec936db9c11139ec7fcb73d4f2">&#9670;&nbsp;</a></span>Cycling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Cycling </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_level.html">Level</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out_8cpp_source.html">Break_out.cpp</a> строка <a class="el" href="_break__out_8cpp_source.html#l00018">18</a></p>
+<div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    HDC  Playing_field_View_start  = txLoadImage (<span class="stringliteral">&quot;Resourses\\fon_entry.bmp&quot;</span>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    HDC  Playing_field_View_run    = txLoadImage (<span class="stringliteral">&quot;Resourses\\fon_run.bmp&quot;</span>);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    HDC  Playing_field_View_passed = txLoadImage (<span class="stringliteral">&quot;Resourses\\fon_finish_victory.bmp&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    HDC  Playing_field_View_over   = txLoadImage (<span class="stringliteral">&quot;Resourses\\fon_finish.bmp&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> quit = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">while</span> (!quit)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">switch</span> (<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>.<a class="code" href="struct_level.html#ae03c85666bea697b42ed0d4b20ca92f8">game_state</a>)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="_break__out___lib_8h.html#aa34e41c7acab285c5f2fbc4c69fab97f">GAME_STATE_INIT</a>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                txBitBlt  (txDC(), 0, 0, <a class="code" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a>, <a class="code" href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a>, Playing_field_View_start, 0, 0);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a8427226d2159ae7f24f4e20b7352c18c">Start</a>.<a class="code" href="struct_button_type.html#ac9d69c5911651c62df9842dc509ea322">Menu</a>(&amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <a class="code" href="_break__out___lib_8h.html#ab0a1b3a70f9ca97855e736eb366f06b4">Exit</a>.<a class="code" href="struct_button_type.html#ac9d69c5911651c62df9842dc509ea322">Menu</a> (&amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                }<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="_break__out___lib_8h.html#ac02fc75454574e56daa0c2a26f37c1b2">GAME_START_LEVEL</a>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                <a class="code" href="_break__out___lib_8h.html#ae22a56c6d4825a6030efb10fa6952a44">Fill_array</a>  (<a class="code" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>.<a class="code" href="struct_level.html#ae03c85666bea697b42ed0d4b20ca92f8">game_state</a> = <a class="code" href="_break__out___lib_8h.html#ae648ec5e53e0f9ae60fe73caef29c9fe">GAME_STATE_RUN</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                }<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="_break__out___lib_8h.html#ae648ec5e53e0f9ae60fe73caef29c9fe">GAME_STATE_RUN</a>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                txBitBlt  (txDC(), 0, 0, <a class="code" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a>, <a class="code" href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a>, Playing_field_View_run, 0, 0);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a>.<a class="code" href="struct_paddle.html#afc8af09b66cff5c068643e5a6fd1627c">Physics_Paddle_Mouse</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a36145728efc8c35b0208f25cfbb5e508">Set</a>.<a class="code" href="struct_blocks.html#a65c8da22205d53e877b8c0cd24580378">Draw_Blocks</a> (<a class="code" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>.<a class="code" href="struct_ball.html#aa46bfb370c8a0524109bfdfc6b277306">Physics_Ball</a> (<a class="code" href="_break__out___lib_8h.html#a03e28be41881b703c836edbfe9b51b17">dt</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <a class="code" href="_break__out___lib_8h.html#aad19d8451d130d30726a521f3e94140e">Control_CollisionsBP</a> (&amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a8e71050cfc858e219f7c57d7ca733d4f">Control_CollisionsBB</a> (<a class="code" href="_break__out___lib_8h.html#a671c2eae79302ad09bdd42991ad94d6f">arr</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a36145728efc8c35b0208f25cfbb5e508">Set</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="comment">//Print_array (arr);</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a93be4e7bf35cde28e9d7995a93009da0">paddle</a>.<a class="code" href="struct_paddle.html#a19184855ece3365962c7769f94268143">Draw_Paddle</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>.<a class="code" href="struct_ball.html#a66616c41cb409ec73a52070bd2761e49">Draw_Ball</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a3c36b37cd133d8928e6fb98dc941992a">OutputScore</a> (&amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, 90, 650, TX_YELLOW);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                <a class="code" href="_break__out___lib_8h.html#ab194e8518927b1a17926a94e149803a8">Pause_icon</a>.<a class="code" href="struct_button_type.html#ac9d69c5911651c62df9842dc509ea322">Menu</a> (&amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a344090c544dac0f9e487f6a4f88eb62a">Play_icon</a>.<a class="code" href="struct_button_type.html#ac9d69c5911651c62df9842dc509ea322">Menu</a>  (&amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <a class="code" href="_break__out___lib_8h.html#a4966cb712fb67b7053f05912880a00fe">Exit_icon</a>.<a class="code" href="struct_button_type.html#ac9d69c5911651c62df9842dc509ea322">Menu</a>  (&amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                }<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="_break__out___lib_8h.html#a2ad2b8ae855ce7ecb9248cc9b032ebc1">GAME_STATE_SHUTDOWN</a>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                txBitBlt  (txDC(), 0, 0, <a class="code" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a>, <a class="code" href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a>, Playing_field_View_passed, 0, 0);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <a class="code" href="_break__out___lib_8h.html#aac3a7c839ffef1524217cbe11eda43c8">Restart</a>.<a class="code" href="struct_button_type.html#ac9d69c5911651c62df9842dc509ea322">Menu</a> (&amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, &amp;<a class="code" href="_break__out___lib_8h.html#a15de41d45a60a7649d561f53ca88352c">ball</a>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keywordflow">if</span> (txGetAsyncKeyState (VK_ESCAPE)) <a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>.<a class="code" href="struct_level.html#ae03c85666bea697b42ed0d4b20ca92f8">game_state</a> = <a class="code" href="_break__out___lib_8h.html#acc8371038d74e92c1a07f0fb4d3336e5">GAME_STATE_EXIT</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                }<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">case</span> <a class="code" href="_break__out___lib_8h.html#acc8371038d74e92c1a07f0fb4d3336e5">GAME_STATE_EXIT</a>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                quit = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                txBitBlt  (txDC(), 0, 0, <a class="code" href="_break__out___lib_8h.html#a5256a79b292c1ee1cad686afa167b9da">RIGHT_EDGE_WINDOW</a>, <a class="code" href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a>, Playing_field_View_over, 0, 0);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                }<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        txSleep (30);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    txDeleteDC (Playing_field_View_start);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    txDeleteDC (Playing_field_View_run);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    txDeleteDC (Playing_field_View_passed);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    txDeleteDC (Playing_field_View_over);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="ttc" id="a_break__out___lib_8h_html_a03e28be41881b703c836edbfe9b51b17"><div class="ttname"><a href="_break__out___lib_8h.html#a03e28be41881b703c836edbfe9b51b17">dt</a></div><div class="ttdeci">double dt</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00116">Break_out_Lib.h:116</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a344090c544dac0f9e487f6a4f88eb62a"><div class="ttname"><a href="_break__out___lib_8h.html#a344090c544dac0f9e487f6a4f88eb62a">Play_icon</a></div><div class="ttdeci">ButtonType Play_icon</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00109">Break_out_Lib.h:109</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a3c36b37cd133d8928e6fb98dc941992a"><div class="ttname"><a href="_break__out___lib_8h.html#a3c36b37cd133d8928e6fb98dc941992a">OutputScore</a></div><div class="ttdeci">void OutputScore(Level *level, int tablo_x, int tablo_y, COLORREF color_score)</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00506">Break_out_Lib.h:506</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a4966cb712fb67b7053f05912880a00fe"><div class="ttname"><a href="_break__out___lib_8h.html#a4966cb712fb67b7053f05912880a00fe">Exit_icon</a></div><div class="ttdeci">ButtonType Exit_icon</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00111">Break_out_Lib.h:111</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_a8427226d2159ae7f24f4e20b7352c18c"><div class="ttname"><a href="_break__out___lib_8h.html#a8427226d2159ae7f24f4e20b7352c18c">Start</a></div><div class="ttdeci">ButtonType Start</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00108">Break_out_Lib.h:108</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_aa34e41c7acab285c5f2fbc4c69fab97f"><div class="ttname"><a href="_break__out___lib_8h.html#aa34e41c7acab285c5f2fbc4c69fab97f">GAME_STATE_INIT</a></div><div class="ttdeci">#define GAME_STATE_INIT</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00041">Break_out_Lib.h:41</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_aa4ba12946eca9feab537e58f1e8455dd"><div class="ttname"><a href="_break__out___lib_8h.html#aa4ba12946eca9feab537e58f1e8455dd">BOTTON_WINDOW</a></div><div class="ttdeci">#define BOTTON_WINDOW</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00040">Break_out_Lib.h:40</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_aac3a7c839ffef1524217cbe11eda43c8"><div class="ttname"><a href="_break__out___lib_8h.html#aac3a7c839ffef1524217cbe11eda43c8">Restart</a></div><div class="ttdeci">ButtonType Restart</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00112">Break_out_Lib.h:112</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_ab0a1b3a70f9ca97855e736eb366f06b4"><div class="ttname"><a href="_break__out___lib_8h.html#ab0a1b3a70f9ca97855e736eb366f06b4">Exit</a></div><div class="ttdeci">ButtonType Exit</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00113">Break_out_Lib.h:113</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_ab194e8518927b1a17926a94e149803a8"><div class="ttname"><a href="_break__out___lib_8h.html#ab194e8518927b1a17926a94e149803a8">Pause_icon</a></div><div class="ttdeci">ButtonType Pause_icon</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00110">Break_out_Lib.h:110</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_acc8371038d74e92c1a07f0fb4d3336e5"><div class="ttname"><a href="_break__out___lib_8h.html#acc8371038d74e92c1a07f0fb4d3336e5">GAME_STATE_EXIT</a></div><div class="ttdeci">#define GAME_STATE_EXIT</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00045">Break_out_Lib.h:45</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_ae22a56c6d4825a6030efb10fa6952a44"><div class="ttname"><a href="_break__out___lib_8h.html#ae22a56c6d4825a6030efb10fa6952a44">Fill_array</a></div><div class="ttdeci">void Fill_array(int arr[SIZE_ROWS][SIZE_COLS])</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00144">Break_out_Lib.h:144</a></div></div>
+<div class="ttc" id="a_break__out___lib_8h_html_ae648ec5e53e0f9ae60fe73caef29c9fe"><div class="ttname"><a href="_break__out___lib_8h.html#ae648ec5e53e0f9ae60fe73caef29c9fe">GAME_STATE_RUN</a></div><div class="ttdeci">#define GAME_STATE_RUN</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00043">Break_out_Lib.h:43</a></div></div>
+<div class="ttc" id="astruct_ball_html_a66616c41cb409ec73a52070bd2761e49"><div class="ttname"><a href="struct_ball.html#a66616c41cb409ec73a52070bd2761e49">Ball::Draw_Ball</a></div><div class="ttdeci">void Draw_Ball()</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00231">Break_out_Lib.h:231</a></div></div>
+<div class="ttc" id="astruct_ball_html_aa46bfb370c8a0524109bfdfc6b277306"><div class="ttname"><a href="struct_ball.html#aa46bfb370c8a0524109bfdfc6b277306">Ball::Physics_Ball</a></div><div class="ttdeci">void Physics_Ball(double dt, Level *level)</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00259">Break_out_Lib.h:259</a></div></div>
+<div class="ttc" id="astruct_blocks_html_a65c8da22205d53e877b8c0cd24580378"><div class="ttname"><a href="struct_blocks.html#a65c8da22205d53e877b8c0cd24580378">Blocks::Draw_Blocks</a></div><div class="ttdeci">void Draw_Blocks(int arr[SIZE_ROWS][SIZE_COLS])</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00197">Break_out_Lib.h:197</a></div></div>
+<div class="ttc" id="astruct_button_type_html_ac9d69c5911651c62df9842dc509ea322"><div class="ttname"><a href="struct_button_type.html#ac9d69c5911651c62df9842dc509ea322">ButtonType::Menu</a></div><div class="ttdeci">void Menu(Level *level, Ball *ball)</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00577">Break_out_Lib.h:577</a></div></div>
+<div class="ttc" id="astruct_level_html_ae03c85666bea697b42ed0d4b20ca92f8"><div class="ttname"><a href="struct_level.html#ae03c85666bea697b42ed0d4b20ca92f8">Level::game_state</a></div><div class="ttdeci">int game_state</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00065">Break_out_Lib.h:65</a></div></div>
+<div class="ttc" id="astruct_paddle_html_a19184855ece3365962c7769f94268143"><div class="ttname"><a href="struct_paddle.html#a19184855ece3365962c7769f94268143">Paddle::Draw_Paddle</a></div><div class="ttdeci">void Draw_Paddle()</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00316">Break_out_Lib.h:316</a></div></div>
+<div class="ttc" id="astruct_paddle_html_afc8af09b66cff5c068643e5a6fd1627c"><div class="ttname"><a href="struct_paddle.html#afc8af09b66cff5c068643e5a6fd1627c">Paddle::Physics_Paddle_Mouse</a></div><div class="ttdeci">void Physics_Paddle_Mouse()</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00338">Break_out_Lib.h:338</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_break__out___lib_8h_source.html#l00117">arr</a>, <a class="el" href="_break__out___lib_8h_source.html#l00104">ball</a>, <a class="el" href="_break__out___lib_8h_source.html#l00040">BOTTON_WINDOW</a>, <a class="el" href="_break__out___lib_8h_source.html#l00434">Control_CollisionsBB()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00379">Control_CollisionsBP()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00231">Ball::Draw_Ball()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00197">Blocks::Draw_Blocks()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00316">Paddle::Draw_Paddle()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00116">dt</a>, <a class="el" href="_break__out___lib_8h_source.html#l00113">Exit</a>, <a class="el" href="_break__out___lib_8h_source.html#l00111">Exit_icon</a>, <a class="el" href="_break__out___lib_8h_source.html#l00144">Fill_array()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00042">GAME_START_LEVEL</a>, <a class="el" href="_break__out___lib_8h_source.html#l00065">Level::game_state</a>, <a class="el" href="_break__out___lib_8h_source.html#l00045">GAME_STATE_EXIT</a>, <a class="el" href="_break__out___lib_8h_source.html#l00041">GAME_STATE_INIT</a>, <a class="el" href="_break__out___lib_8h_source.html#l00043">GAME_STATE_RUN</a>, <a class="el" href="_break__out___lib_8h_source.html#l00044">GAME_STATE_SHUTDOWN</a>, <a class="el" href="_break__out___lib_8h_source.html#l00106">level</a>, <a class="el" href="_break__out___lib_8h_source.html#l00577">ButtonType::Menu()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00506">OutputScore()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00105">paddle</a>, <a class="el" href="_break__out___lib_8h_source.html#l00110">Pause_icon</a>, <a class="el" href="_break__out___lib_8h_source.html#l00259">Ball::Physics_Ball()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00338">Paddle::Physics_Paddle_Mouse()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00109">Play_icon</a>, <a class="el" href="_break__out___lib_8h_source.html#l00112">Restart</a>, <a class="el" href="_break__out___lib_8h_source.html#l00038">RIGHT_EDGE_WINDOW</a>, <a class="el" href="_break__out___lib_8h_source.html#l00103">Set</a> и <a class="el" href="_break__out___lib_8h_source.html#l00108">Start</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00009">main()</a>.</p>
+
+</div>
+</div>
+<a id="a3c36b37cd133d8928e6fb98dc941992a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c36b37cd133d8928e6fb98dc941992a">&#9670;&nbsp;</a></span>OutputScore()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputScore </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_level.html">Level</a> *&#160;</td>
+          <td class="paramname"><em>level</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tablo_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tablo_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">COLORREF&#160;</td>
+          <td class="paramname"><em>color_score</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Эта функция выводит на экран показатели игры</p>
+<p>Принимает в качестве параметров структур <a class="el" href="struct_level.html">Level</a></p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">(*level).max_score</td><td>максимальный счет за игру </td></tr>
+    <tr><td class="paramname">(*level).score</td><td>текущий счет за уровень </td></tr>
+    <tr><td class="paramname">(*level).number_level</td><td>номер уровня </td></tr>
+    <tr><td class="paramname">(*level).legend_score</td><td>надпись </td></tr>
+    <tr><td class="paramname">(*level).legend_level</td><td>надпись </td></tr>
+    <tr><td class="paramname">(*level).legend_max_score</td><td>надпись</td></tr>
+    <tr><td class="paramname">tablo_x</td><td>x - координата начала надписи </td></tr>
+    <tr><td class="paramname">tablo_y</td><td>y - координата начала надписи </td></tr>
+    <tr><td class="paramname">COLORREF</td><td>color_score цвет надписи</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section user"><dt>Пример использования:</dt><dd></dd></dl>
+<div class="fragment"><div class="line"><a class="code" href="_break__out___lib_8h.html#a3c36b37cd133d8928e6fb98dc941992a">OutputScore</a> (&amp;<a class="code" href="_break__out___lib_8h.html#a083b6d36ebd55b2e07bedb04440cb325">level</a>, 90, 650, TX_YELLOW);</div>
+</div><!-- fragment --> 
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00506">506</a></p>
+<div class="fragment"><div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    {</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;    txSelectFont (<span class="stringliteral">&quot;Times&quot;</span>, 26, 10);</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordtype">char</span> str [100] = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    sprintf (str, <span class="stringliteral">&quot;%s: %-16d %s: %-16d %s: %d&quot;</span>,</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;            (*level).legend_score, (*level).score,</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;            (*level).legend_level, (*level).number_level,</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;            (*level).legend_max_score, (*level).max_score);</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;    txSetColor (color_score);</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;    txSetFillColor (color_score);</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;    txTextOut (tablo_x, tablo_y, str);</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<a id="a44bedbaa8f12f037589c121acc2d1cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44bedbaa8f12f037589c121acc2d1cc0">&#9670;&nbsp;</a></span>Check_distanse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Check_distanse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_paddle.html">Paddle</a>&#160;</td>
+          <td class="paramname"><em>paddle1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_ball.html">Ball</a>&#160;</td>
+          <td class="paramname"><em>ball1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00343">343</a></p>
+<div class="fragment"><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    {</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span> ((ball1.<a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a> + ball1.<a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a> &gt;= paddle1.<a class="code" href="struct_paddle.html#a792d84698afe579ed52c8e8bc497de9b">x</a>)</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        &amp;&amp; (ball1.<a class="code" href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">x</a> + ball1.<a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a> &lt;= paddle1.<a class="code" href="struct_paddle.html#a792d84698afe579ed52c8e8bc497de9b">x</a> + paddle1.<a class="code" href="struct_paddle.html#a77fd5f7348c15e783a0254458cbeee50">width</a>)</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        &amp;&amp; (ball1.<a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a> + ball1.<a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a> &gt;= paddle1.<a class="code" href="struct_paddle.html#a0ee969e7d8efb6a36971d9db61389cab">y</a>)</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        &amp;&amp; (ball1.<a class="code" href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">y</a> + ball1.<a class="code" href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">radius</a> &lt;= paddle1.<a class="code" href="struct_paddle.html#a0ee969e7d8efb6a36971d9db61389cab">y</a> + paddle1.<a class="code" href="struct_paddle.html#afb347bccf9af92576979817916e4c367">height</a>))</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
+<div class="ttc" id="astruct_ball_html_a17d73231eab81d0e74cf28d0068fe5cb"><div class="ttname"><a href="struct_ball.html#a17d73231eab81d0e74cf28d0068fe5cb">Ball::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00074">Break_out_Lib.h:74</a></div></div>
+<div class="ttc" id="astruct_ball_html_a60894aab5e27e93bacf2393b9110a049"><div class="ttname"><a href="struct_ball.html#a60894aab5e27e93bacf2393b9110a049">Ball::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00074">Break_out_Lib.h:74</a></div></div>
+<div class="ttc" id="astruct_ball_html_ab5b6ed9fe327aace1b4e4a6473838bc6"><div class="ttname"><a href="struct_ball.html#ab5b6ed9fe327aace1b4e4a6473838bc6">Ball::radius</a></div><div class="ttdeci">int radius</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00076">Break_out_Lib.h:76</a></div></div>
+<div class="ttc" id="astruct_paddle_html_a0ee969e7d8efb6a36971d9db61389cab"><div class="ttname"><a href="struct_paddle.html#a0ee969e7d8efb6a36971d9db61389cab">Paddle::y</a></div><div class="ttdeci">double y</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00086">Break_out_Lib.h:86</a></div></div>
+<div class="ttc" id="astruct_paddle_html_a77fd5f7348c15e783a0254458cbeee50"><div class="ttname"><a href="struct_paddle.html#a77fd5f7348c15e783a0254458cbeee50">Paddle::width</a></div><div class="ttdeci">int width</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00087">Break_out_Lib.h:87</a></div></div>
+<div class="ttc" id="astruct_paddle_html_a792d84698afe579ed52c8e8bc497de9b"><div class="ttname"><a href="struct_paddle.html#a792d84698afe579ed52c8e8bc497de9b">Paddle::x</a></div><div class="ttdeci">double x</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00086">Break_out_Lib.h:86</a></div></div>
+<div class="ttc" id="astruct_paddle_html_afb347bccf9af92576979817916e4c367"><div class="ttname"><a href="struct_paddle.html#afb347bccf9af92576979817916e4c367">Paddle::height</a></div><div class="ttdeci">int height</div><div class="ttdef"><b>Definition:</b> <a href="_break__out___lib_8h_source.html#l00088">Break_out_Lib.h:88</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_break__out___lib_8h_source.html#l00088">Paddle::height</a>, <a class="el" href="_break__out___lib_8h_source.html#l00076">Ball::radius</a>, <a class="el" href="_break__out___lib_8h_source.html#l00087">Paddle::width</a>, <a class="el" href="_break__out___lib_8h_source.html#l00074">Ball::x</a>, <a class="el" href="_break__out___lib_8h_source.html#l00086">Paddle::x</a>, <a class="el" href="_break__out___lib_8h_source.html#l00074">Ball::y</a> и <a class="el" href="_break__out___lib_8h_source.html#l00086">Paddle::y</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="a36145728efc8c35b0208f25cfbb5e508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36145728efc8c35b0208f25cfbb5e508">&#9670;&nbsp;</a></span>Set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_blocks.html">Blocks</a> Set = {10, 50, 80, 20, 85, 25, 0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00103">103</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<a id="a15de41d45a60a7649d561f53ca88352c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15de41d45a60a7649d561f53ca88352c">&#9670;&nbsp;</a></span>ball</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_ball.html">Ball</a> ball = {400, 400, 15, 15, 10, 0}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00104">104</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<a id="a93be4e7bf35cde28e9d7995a93009da0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93be4e7bf35cde28e9d7995a93009da0">&#9670;&nbsp;</a></span>paddle</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_paddle.html">Paddle</a> paddle = {0, 600, 180, 20}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00105">105</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>.</p>
+
+</div>
+</div>
+<a id="a083b6d36ebd55b2e07bedb04440cb325"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083b6d36ebd55b2e07bedb04440cb325">&#9670;&nbsp;</a></span>level</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_level.html">Level</a> level = {0, 0, 1, 0, &quot;SCORE&quot;, &quot;LEVEL&quot;, &quot;BEST RESULT&quot;}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00106">106</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a> и <a class="el" href="_break__out_8cpp_source.html#l00009">main()</a>.</p>
+
+</div>
+</div>
+<a id="a8427226d2159ae7f24f4e20b7352c18c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8427226d2159ae7f24f4e20b7352c18c">&#9670;&nbsp;</a></span>Start</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_button_type.html">ButtonType</a> Start = {300, 330, 160, 70}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00108">108</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00577">ButtonType::Menu()</a>.</p>
+
+</div>
+</div>
+<a id="a344090c544dac0f9e487f6a4f88eb62a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a344090c544dac0f9e487f6a4f88eb62a">&#9670;&nbsp;</a></span>Play_icon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_button_type.html">ButtonType</a> Play_icon = {590, 25, 30, 20}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00109">109</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00577">ButtonType::Menu()</a>.</p>
+
+</div>
+</div>
+<a id="ab194e8518927b1a17926a94e149803a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab194e8518927b1a17926a94e149803a8">&#9670;&nbsp;</a></span>Pause_icon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_button_type.html">ButtonType</a> Pause_icon = {640, 25, 30, 20}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00110">110</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00577">ButtonType::Menu()</a>.</p>
+
+</div>
+</div>
+<a id="a4966cb712fb67b7053f05912880a00fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4966cb712fb67b7053f05912880a00fe">&#9670;&nbsp;</a></span>Exit_icon</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_button_type.html">ButtonType</a> Exit_icon = {690, 25, 30, 20}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00111">111</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00577">ButtonType::Menu()</a>.</p>
+
+</div>
+</div>
+<a id="aac3a7c839ffef1524217cbe11eda43c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3a7c839ffef1524217cbe11eda43c8">&#9670;&nbsp;</a></span>Restart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_button_type.html">ButtonType</a> Restart = {270, 620, 210, 40}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00112">112</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00577">ButtonType::Menu()</a>.</p>
+
+</div>
+</div>
+<a id="ab0a1b3a70f9ca97855e736eb366f06b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0a1b3a70f9ca97855e736eb366f06b4">&#9670;&nbsp;</a></span>Exit</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_button_type.html">ButtonType</a> Exit = {305, 455, 155, 65}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00113">113</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00577">ButtonType::Menu()</a>.</p>
+
+</div>
+</div>
+<a id="a03e28be41881b703c836edbfe9b51b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03e28be41881b703c836edbfe9b51b17">&#9670;&nbsp;</a></span>dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double dt = 1.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00116">116</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00259">Ball::Physics_Ball()</a>.</p>
+
+</div>
+</div>
+<a id="a671c2eae79302ad09bdd42991ad94d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671c2eae79302ad09bdd42991ad94d6f">&#9670;&nbsp;</a></span>arr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int arr[<a class="el" href="_break__out___lib_8h.html#acdc1305b1b5ecac1b5bd1a6ee130f95e">SIZE_ROWS</a>][<a class="el" href="_break__out___lib_8h.html#a87d7217f7b4b405cf816601245e2bec3">SIZE_COLS</a>] {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="_break__out___lib_8h_source.html">Break_out_Lib.h</a> строка <a class="el" href="_break__out___lib_8h_source.html#l00117">117</a></p>
+
+<p class="reference">Используется в <a class="el" href="_break__out___lib_8h_source.html#l00434">Control_CollisionsBB()</a>, <a class="el" href="_break__out_8cpp_source.html#l00018">Cycling()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00197">Blocks::Draw_Blocks()</a>, <a class="el" href="_break__out___lib_8h_source.html#l00144">Fill_array()</a> и <a class="el" href="_break__out___lib_8h_source.html#l00166">Print_array()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_break__out___lib_8h.html">Break_out_Lib.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>
